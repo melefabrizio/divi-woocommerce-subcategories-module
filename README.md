@@ -69,7 +69,7 @@ my-extension
 ├── includes
 │   ├── modules
 │   │   └── HelloWorld
-│   │       ├── HelloWorld.jsx
+│   │       ├── WooSubcategories.jsx
 │   │       ├── HelloWorld.php
 │   │       └── style.css
 │   ├── loader.js
@@ -406,7 +406,7 @@ To add Flow to a Create Divi Extension project, follow these steps:
 1. Run `npm install --save flow-bin` (or `yarn add flow-bin`).
 2. Add `"flow": "flow"` to the `scripts` section of your `package.json`.
 3. Run `npm run flow init` (or `yarn flow init`) to create a [`.flowconfig` file](https://flowtype.org/docs/advanced-configuration.html) in the root directory.
-4. Add `// @flow` to any files you want to type check (for example, to `includes/modules/HelloWorld/HelloWorld.jsx`).
+4. Add `// @flow` to any files you want to type check (for example, to `includes/modules/HelloWorld/WooSubcategories.jsx`).
 
 Now you can run `npm run flow` (or `yarn flow`) to check the files for type errors.
 You can optionally use an IDE like [Nuclide](https://nuclide.io/docs/languages/flow/) for a better integrated experience.

@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import WooSubcategories from './WooSubcategories/WooSubcategories';
 
-export default [HelloWorld];
+export default [WooSubcategories];

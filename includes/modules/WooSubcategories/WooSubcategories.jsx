@@ -5,19 +5,19 @@ import React, { Component } from 'react';
 import './style.css';
 
 
-class HelloWorld extends Component {
+class WooSubcategories extends Component {
 
-  static slug = 'fabb_hello_world';
+  static slug = 'fabb_woo_subcategories';
 
   render() {
     const Content = this.props.content;
 
     return (
       <h1>
-        <Content/>
+        {this.props.show_numbers}
       </h1>
     );
   }
 }
 
-export default HelloWorld;
+export default WooSubcategories;
