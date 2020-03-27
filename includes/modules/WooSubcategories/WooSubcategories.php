@@ -24,49 +24,28 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 
 		$this->advanced_fields = array(
 			'fonts'                 => array(
-				'text'   => array(
+				'header'   => array(
 					'label'           => esc_html__( 'Title', 'fabb-divi-subcategories-module' ),
 					'css'             => array(
-						'color'       => "{$this->main_css_element} h2.woocommerce-loop-category__title",
-						'text-align'       => "{$this->main_css_element} h2.woocommerce-loop-category__title",
+						'main'       => "{$this->main_css_element} h2.woocommerce-loop-category__title",
+						'important'       => "all",
 					),
-					'line_height'     => array(
-						'default' => floatval( et_get_option( 'body_font_height', '1.7' ) ) . 'em',
+					'header_level'    => array(
+						'default'     => 'h2'
 					),
-					'font_size'       => array(
-						'default' => absint( et_get_option( 'body_font_size', '14' ) ) . 'px',
-					),
-					'toggle_slug'     => 'text',
-					'sub_toggle'      => 'p',
+
+				),
+				'number'   => array(
+					'label'           => esc_html__( 'Number', 'fabb-divi-subcategories-module' ),
+					'css'             => array(
+						'main'       => "{$this->main_css_element} h2.woocommerce-loop-category__title mark",
+						'important'       => "all",
+					)
+
 				)
 
 			),
-			'background'            => array(
-				'settings' => array(
-					'color' => 'alpha',
-				),
-			),
-			'margin_padding' => array(
-				'css' => array(
-					'important' => 'all',
-				),
-			),
-			'text'                  => array(
-				'css' => array(
-				'main'  => "{$this->main_css_element} h2.woocommerce-loop-category__title",
-				),
-				'use_background_layout' => true,
-				'sub_toggle'  => 'p',
-				'options' => array(
-					'text_orientation' => array(
-						'default'          => 'left',
-					),
-					'background_layout' => array(
-						'default' => 'light',
-						'hover'   => 'tabs',
-					),
-				),
-			),
+
 			'text_shadow'           => array(
 				// Don't add text-shadow fields since they already are via font-options
 				'default' => false,
@@ -110,7 +89,14 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 					),
 					'toggle_slug'     => 'main_content',
 					'default'         => 'on'
-				)
+				),
+				'mark_background' => array(
+					'label'             => esc_html__( 'Number Background', 'fabb-divi-subcategories-module' ),
+					'type'              => 'color-alpha',
+					'toggle_slug'     => 'number',
+					'tab_slug'      => 'advanced',
+
+				),
 
 
 		);
@@ -148,6 +134,16 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 	}
 
 	public function render( $attrs, $content = null, $render_slug ) {
+
+		if ( '' !== $this->props['mark_background'] ) {
+			ET_Builder_Element::set_style( $render_slug, array(
+				'selector'    => '%%order_class%% h2.woocommerce-loop-category__title mark',
+				'declaration' => sprintf(
+					'background-color: %1$s;',
+					esc_html( $this->props['mark_background'] )
+				),
+			) );
+		}
 		return $this->_render_module_wrapper(do_shortcode($this->generate_shortcode()));
 	}
 }
