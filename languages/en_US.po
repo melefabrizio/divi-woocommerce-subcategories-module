@@ -2,10 +2,10 @@
 # This file is distributed under the MIT.
 msgid ""
 msgstr ""
-"Project-Id-Version: Divi Woocommerce Subcategories Module 0.1\n"
+"Project-Id-Version: Divi Woocommerce Subcategories Module 0.5\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/divi-subcategories-module\n"
-"POT-Creation-Date: 2020-03-27 00:15:57+00:00\n"
+"POT-Creation-Date: 2020-03-27 10:56:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,34 +37,46 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:82
+#: includes/modules/WooSubcategories/WooSubcategories.php:39
+msgid "Number"
+msgstr ""
+
+#: includes/modules/WooSubcategories/WooSubcategories.php:61
 msgid "Show Numbers"
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:85
-#: includes/modules/WooSubcategories/WooSubcategories.php:109
+#: includes/modules/WooSubcategories/WooSubcategories.php:64
+#: includes/modules/WooSubcategories/WooSubcategories.php:88
 msgid "Yes"
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:86
-#: includes/modules/WooSubcategories/WooSubcategories.php:108
+#: includes/modules/WooSubcategories/WooSubcategories.php:65
+#: includes/modules/WooSubcategories/WooSubcategories.php:87
 msgid "No"
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:92
+#: includes/modules/WooSubcategories/WooSubcategories.php:71
 msgid "Columns"
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:94
+#: includes/modules/WooSubcategories/WooSubcategories.php:73
 msgid "How many columns to be shown."
 msgstr ""
 
-#: includes/modules/WooSubcategories/WooSubcategories.php:105
+#: includes/modules/WooSubcategories/WooSubcategories.php:84
 msgid "Hide Empty Categories"
+msgstr ""
+
+#: includes/modules/WooSubcategories/WooSubcategories.php:94
+msgid "Number Background"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "Divi Woocommerce Subcategories Module"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/melefabrizio/divi-woocommerce-subcategories-module"
 msgstr ""
 
 #. Description of the plugin/theme
