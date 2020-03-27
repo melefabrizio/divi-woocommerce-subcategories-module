@@ -65,7 +65,7 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 						'off' => esc_html__( 'No', 'fabb-divi-subcategories-module' ),
 					),
 					'toggle_slug'     => 'main_content',
-					'default'        => 'off'
+					'default'        => 'off',
 				),
 				'columns' => array(
 					'label'           => esc_html__( 'Columns', 'dicm-divi-custom-modules' ),
@@ -88,7 +88,7 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 						'on' => esc_html__( 'Yes', 'fabb-divi-subcategories-module' ),
 					),
 					'toggle_slug'     => 'main_content',
-					'default'         => 'on'
+					'default'         => 'on',
 				),
 				'mark_background' => array(
 					'label'             => esc_html__( 'Number Background', 'fabb-divi-subcategories-module' ),
@@ -126,9 +126,10 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 			add_filter('woocommerce_subcategory_count_html','__return_false');
 		}
 
-		$hide          = $this->props['hide_empty'] == 'on' ? 1 : 0;
+		$hide       = $this->props['hide_empty'] == 'on' ? 1 : 0;
 		$hide_empty = "hide_empty=\"{$hide}\" ";
-		$columns    = "columns=\"{$this->props['columns']}\" ";
+		$column_number   = esc_attr($this->props['columns']);
+		$columns    = "columns=\"{$column_number}\" ";
 
 		return "[product_categories ids=\"$id_list\" $hide_empty $columns]";
 	}
