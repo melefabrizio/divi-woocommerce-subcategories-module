@@ -1,4 +1,4 @@
-#Woocommerce Subcategories Module for Divi
+# Woocommerce Subcategories Module for Divi
 
 This is an extension plugin for Divi Builder by Elegant Themes and Woocommerce.
 
