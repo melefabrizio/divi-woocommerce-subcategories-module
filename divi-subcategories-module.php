@@ -1,28 +1,37 @@
 <?php
 /*
-Plugin Name: Divi Subcategories Module
+Plugin Name: Divi Woocommerce Subcategories Module
 Plugin URI:  
-Description: 
-Version:     1.0.0
+Description: Place your Woocommerce subcategories dynamically as a Divi Module
+Version:     0.1
 Author:      Fabrizio Mele
 Author URI:  https://mele.io
-License:     GPL2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License:     MIT
+License URI: https://spdx.org/licenses/MIT.html
 Text Domain: fabb-divi-subcategories-module
 Domain Path: /languages
 
-Divi Subcategories Module is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-any later version.
+MIT License
 
-Divi Subcategories Module is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+Copyright (c) 2020 Fabrizio Mele
 
-You should have received a copy of the GNU General Public License
-along with Divi Subcategories Module. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 */
 
 
