@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Woocommerce Subcategories Module for Divi
+Plugin Name: WC Product Subcategories Module for Divi
 Plugin URI:  https://github.com/melefabrizio/divi-woocommerce-subcategories-module
 Description: Place your Woocommerce subcategories dynamically as a Divi Module
 Version:     1.0
