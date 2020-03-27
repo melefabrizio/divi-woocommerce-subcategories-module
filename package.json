@@ -1,5 +1,5 @@
 {
-  "name": "divi-subcategories-module",
+  "name": "product-subcategories-module-divi-woo",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -28,7 +28,7 @@
     ]
   },
   "cde": {
-    "gettext": "fabb-divi-subcategories-module",
+    "gettext": "fabb-product-subcategories-divi-module-woo",
     "prefix": "fabb"
   }
 }

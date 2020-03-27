@@ -9,7 +9,7 @@ class FABB_DiviSubcategoriesModule extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $gettext_domain = 'fabb-divi-subcategories-module';
+	public $gettext_domain = 'fabb-product-subcategories-divi-module-woo';
 
 	/**
 	 * The extension's WP Plugin name.
@@ -18,7 +18,7 @@ class FABB_DiviSubcategoriesModule extends DiviExtension {
 	 *
 	 * @var string
 	 */
-	public $name = 'divi-subcategories-module';
+	public $name = 'product-subcategories-divi-module-woo';
 
 	/**
 	 * The extension's version
@@ -35,7 +35,7 @@ class FABB_DiviSubcategoriesModule extends DiviExtension {
 	 * @param string $name
 	 * @param array  $args
 	 */
-	public function __construct( $name = 'divi-subcategories-module', $args = array() ) {
+	public function __construct( $name = 'product-subcategories-divi-module-woo', $args = array() ) {
 		$this->plugin_dir     = plugin_dir_path( __FILE__ );
 		$this->plugin_dir_url = plugin_dir_url( $this->plugin_dir );
 

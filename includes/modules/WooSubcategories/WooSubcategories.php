@@ -12,11 +12,11 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'Woo Subcategories', 'fabb-divi-subcategories-module' );
+		$this->name = esc_html__( 'Woo Subcategories', 'fabb-product-subcategories-divi-module-woo' );
 		$this->settings_modal_toggles  = array(
 			'general'  => array(
 				'toggles' => array(
-					'main_content' => esc_html__( 'Subcategories Settings', 'fabb-divi-subcategories-module' ),
+					'main_content' => esc_html__( 'Subcategories Settings', 'fabb-product-subcategories-divi-module-woo' ),
 
 				),
 			)
@@ -25,7 +25,7 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 		$this->advanced_fields = array(
 			'fonts'                 => array(
 				'header'   => array(
-					'label'           => esc_html__( 'Title', 'fabb-divi-subcategories-module' ),
+					'label'           => esc_html__( 'Title', 'fabb-product-subcategories-divi-module-woo' ),
 					'css'             => array(
 						'main'       => "{$this->main_css_element} h2.woocommerce-loop-category__title",
 						'important'       => "all",
@@ -36,7 +36,7 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 
 				),
 				'number'   => array(
-					'label'           => esc_html__( 'Number', 'fabb-divi-subcategories-module' ),
+					'label'           => esc_html__( 'Number', 'fabb-product-subcategories-divi-module-woo' ),
 					'css'             => array(
 						'main'       => "{$this->main_css_element} h2.woocommerce-loop-category__title mark",
 						'important'       => "all",
@@ -58,11 +58,11 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 	public function get_fields() {
 		return array(
 				'show_numbers' => array(
-					'label'             => esc_html__( 'Show Numbers', 'fabb-divi-subcategories-module' ),
+					'label'             => esc_html__( 'Show Numbers', 'fabb-product-subcategories-divi-module-woo' ),
 					'type'              => 'yes_no_button',
 					'options'           => array(
-						'on'  => esc_html__( 'Yes', 'fabb-divi-subcategories-module' ),
-						'off' => esc_html__( 'No', 'fabb-divi-subcategories-module' ),
+						'on'  => esc_html__( 'Yes', 'fabb-product-subcategories-divi-module-woo' ),
+						'off' => esc_html__( 'No', 'fabb-product-subcategories-divi-module-woo' ),
 					),
 					'toggle_slug'     => 'main_content',
 					'default'        => 'off',
@@ -81,17 +81,17 @@ class FABB_WooSubcategories extends ET_Builder_Module {
 					'unitless' => true,
 				),
 				'hide_empty' => array(
-					'label'             => esc_html__( 'Hide Empty Categories', 'fabb-divi-subcategories-module' ),
+					'label'             => esc_html__( 'Hide Empty Categories', 'fabb-product-subcategories-divi-module-woo' ),
 					'type'              => 'yes_no_button',
 					'options'           => array(
-						'off'  => esc_html__( 'No', 'fabb-divi-subcategories-module' ),
-						'on' => esc_html__( 'Yes', 'fabb-divi-subcategories-module' ),
+						'off'  => esc_html__( 'No', 'fabb-product-subcategories-divi-module-woo' ),
+						'on' => esc_html__( 'Yes', 'fabb-product-subcategories-divi-module-woo' ),
 					),
 					'toggle_slug'     => 'main_content',
 					'default'         => 'on',
 				),
 				'mark_background' => array(
-					'label'             => esc_html__( 'Number Background', 'fabb-divi-subcategories-module' ),
+					'label'             => esc_html__( 'Number Background', 'fabb-product-subcategories-divi-module-woo' ),
 					'type'              => 'color-alpha',
 					'toggle_slug'     => 'number',
 					'tab_slug'      => 'advanced',
