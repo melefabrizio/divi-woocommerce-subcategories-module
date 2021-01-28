@@ -21,3 +21,9 @@ if you want you can clone this repo and adapt to your liking! It is based on [cr
 a look at that to get it running and building.
 
 Licensed under MIT License.
+
+### Questions?
+
+The plugin's working is pretty straightforward: as said before it displays `[product_categories parent=$current_page_wc_category]`, where `$current_page_wc_category` is the wocommerce category id of the current page/product. 
+
+If you have other questions please open an issue on this repo, I probably won't answer on requests by email or social networks.
