@@ -1,5 +1,7 @@
 # Product Subcategories Module for Divi and Woocommerce
 
+**Warning: This plugin is unmantained. Feel free to fork & improve it.**
+
 This is an extension plugin for Divi Builder by Elegant Themes and Woocommerce.
 
 This plugin allows you to show dynamical product subcategories inside Divi Theme Builder Templates as a module:
